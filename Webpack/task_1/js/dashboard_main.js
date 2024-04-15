@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 // Import jQuery and Lodash
 import $ from 'jquery';
 import _ from 'lodash';
@@ -14,7 +13,6 @@ $(document).ready(function () {
     // Add click event listener to the button
     $('#clickButton').on('click', updateCounter);
 });
-// eslint-disable-next-line
 // Function to update counter
 const updateCounter = _.debounce(() => {
     // Increment count
@@ -23,6 +21,5 @@ const updateCounter = _.debounce(() => {
     $('#count').text(`${count} clicks on the button`);
 }, 500);
 
-// eslint-disable-next-line
 // Initialize count
 let count = 0;
