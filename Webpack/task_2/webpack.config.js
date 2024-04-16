@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 const path = require('path');
 
 module.exports = {
@@ -16,7 +14,19 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassingOnDebug: true,
+                        },
+                    },
+                ],
+            },
         ]
     }
-};
+}
