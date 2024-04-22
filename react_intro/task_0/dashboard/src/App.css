@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-header {
+  display: flex;
+  /* Utilise flexbox pour la mise en page de l'en-tête */
+  align-items: center;
+  /* Alignement vertical des éléments */
+  justify-content: flex-start;
+  /* Alignement horizontal: démarre au début de la ligne */
+  padding: 20px;
+  border-bottom: solid 3px #e11d48;
+  /* Ligne rouge sous l'en-tête */
+}
+
+.App-logo {
+  height: 130px;
+  
+}
+
+h1 {
+  margin-left: 20px;
+  /* Espace entre le logo et le titre */
+  font-size: 1.5em;
+  /* Taille du titre */
+  color: #e11d48;
+    /* Couleur rouge pour le titre */
+}
+
+.App-body {
+  padding: 20px;
+  text-align: left;
+  /* Alignement à gauche du texte */
+}
+
+.App-footer {
+  position: absolute;
+  /* Positionne le pied de page en bas de la page */
+  bottom: 0;
+  /* Bas de la page */
+  width: 100%;
+  /* Largeur complète */
+  padding: 10px 0;
+  /* Padding vertical sans affecter les côtés */
+  border-top: solid 1px #ccc;
+  /* Ligne de séparation */
+}
