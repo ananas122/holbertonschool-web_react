@@ -3,14 +3,16 @@ const path = require("path");
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
-    entry: "./src/index.js",
+    entry: "./../src/index.js",
     output: {
         filename: "bundle.js",
         path: path.resolve("./dist"),
     },
     devServer: {
         hot: true,
-        contentBase: path.resolve("./dist"),
+        static: {
+            directory: path.resolve("./dist"),
+        },
         compress: true,
         port: 8564,
     },
@@ -20,6 +22,9 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-env", "@babel/preset-react"]
+                }
             },
             {
                 test: /\.css$/i,
@@ -32,8 +37,8 @@ module.exports = {
                     {
                         loader: "image-webpack-loader",
                         options: {
-                            bypassOnDebug: true, // webpack@1.x
-                            disable: true, // webpack@2.x and newer
+                            bypassOnDebug: true,
+                            disable: true,
                         },
                     },
                 ],
