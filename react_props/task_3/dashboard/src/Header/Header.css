@@ -1,0 +1,18 @@
+.App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-bottom: 3px solid var(--holberton-red);
+}
+
+.App-header h1 {
+    margin: auto auto auto 0;
+    color: var(--holberton-red);
+}
+
+.logo-image {
+    max-width: 100px;
+    /* ajustez cette valeur en fonction de vos besoins */
+    max-height: 100px;
+    /* ajustez cette valeur en fonction de vos besoins */
+}
