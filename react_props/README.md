@@ -6,4 +6,10 @@ How to pass properties to components
 How to define types for components
 How to use Fragments
 When to use a key to improve a loop’s performance
+## Requirements
 
+### General
+
+- Allowed editors: vi, vim, emacs, Visual Studio Code
+- All your files should end with a new line
+- All your
